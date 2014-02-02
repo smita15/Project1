@@ -8,6 +8,13 @@
 </head>
 <body>
 
+<% if current_user %>
+	<%= link_to "Log out",sessions_new_path %>
+<% else %>
+	<%= link_to "Log in",sessions_new_path %>
+<% end%>
+
+
 <%= yield %>
 
 </body>
